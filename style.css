@@ -111,7 +111,7 @@ h5 {
 .img {
   width: 100%;
   display: block;
-  object-fit: cover;
+  object-fit: fit;
 }
 .title {
   text-align: center;
@@ -150,20 +150,27 @@ a {
 .single-project {
   box-shadow: var(--shadow-1);
   transition: all 0.5s ease;
+  overflow: hidden;
 }
 
-.single-project:hover {
+/* .single-project:hover {
   transform: translateY(-1rem);
+} */
+
+.single-project:hover .single-project-img {
+  transform: scale(1.2);
 }
 
 .single-project-img {
   border-radius: var(--borderRadius);
   height: 15rem;
+  transition: all 0.3s ease;
 }
 
 .single-project footer {
   padding: 0.75rem;
   text-align: center;
+  /* overflow: hidden; */
 }
 .single-project .name {
   margin-bottom: 0.25rem;
@@ -179,11 +186,11 @@ a {
   letter-spacing: var(--letterSpacing);
   transition: all 0.3s ease;
 }
-.single-project:hover .description {
+/* .single-project:hover .description {
   color: var(--grey-900);
   font-size: 0.8rem;
   font-weight: 700;
-}
+} */
 
 @media screen and (min-width: 768px) {
   .projects-container {
