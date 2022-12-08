@@ -33,3 +33,10 @@ const displayProjects = (list) => {
 };
 
 displayProjects(projects);
+
+// preloader
+const preloader = document.querySelector(".preloader");
+
+window.addEventListener("load", () => {
+  preloader.classList.add("hide-preloader");
+});
