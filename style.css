@@ -169,7 +169,7 @@ a {
 
 .single-project-img {
   border-radius: var(--borderRadius);
-  height: 15rem;
+  height: 10rem;
   transition: all 0.3s ease;
 }
 
